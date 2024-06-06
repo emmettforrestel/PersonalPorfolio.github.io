@@ -51,9 +51,9 @@ export default function Nav() {
       {/* {Check if we're on mobile or not} */}
       {matches && (
         <div className="flex gap-12">
-          <a href="/">Home</a>
-          <a href="/services">Services</a>
-          <a href="/contact">Contact</a>
+          <a href="/PersonalPorfolio">Home</a>
+          <a href="/PersonalPorfolio/about">About</a>
+          <a href="../pages/contact">Contact</a>
         </div>
       )}
 
@@ -92,10 +92,10 @@ export default function Nav() {
             <motion.a variants={itemMotion} href="/">
               Home
             </motion.a>
-            <motion.a variants={itemMotion} href="/services">
-              Services
+            <motion.a variants={itemMotion} href="../pages/about">
+              About
             </motion.a>
-            <motion.a variants={itemMotion} href="/contact">
+            <motion.a variants={itemMotion} href="../pages/contact">
               Contact
             </motion.a>
           </motion.div>
